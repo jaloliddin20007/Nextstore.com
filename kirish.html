@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Nextstore</title>
+</head>
+<body style="background-color: #5af4ff4b;">
+  <div class="navv">
+  <div class="aloqa">
+    <img src="images/Vector (1).svg">
+    <a href="#" class="link-dark no-underline">Aloqa uchun</a>
+    <select id="language-selector">
+      <option value="en">UZ</option>
+      <option value="fr">ENG</option>
+      <option value="es">RUS</option>
+      <!-- Add more language options as needed -->
+    </select>
+  </div>
+  <!-- navbar qism -->
+    <nav class="navbar bg-body-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/Logo.png">
+          </a>
+          <div class="katalog">
+            <a href="katalog.html"><button><img src="images/Vector.png">KATALOG</button></a>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Mahsulotlarni qidirish">
+            
+            <button><img src="images/Vector.svg"></button>
+          </div>
+          <div class="icons">
+          <button><img src="images/Vector (2).svg"></button>
+          <button><img src="images/Vector (3).svg"></button>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="images/image 6 (8).png" alt="Dropdown Image" style="border-radius: 25px;">
+            </a>
+          
+            <div class="dropdown-menu" >
+              <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg> Ma'lumotlarim</a>
+              <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+              </svg> Buyurtmalarim</a>
+              <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+              </svg> Sevimlilar</a>
+              <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> Manzillar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/image 9.png" class="d-block w-90" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/image 9.png" class="d-block w-90" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/image 9.png" class="d-block w-90" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+      <div class="text" >
+      <h3>Kategoriyalar</h3>
+      </div>
+      <div class="photos" style="display: flex;">
+        <div class="card" style="width: 9rem; height: 200px;border: none">
+          <img src="images/image 6.png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Smartfonlar</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; height: 200px;border: none;">
+          <img src="images/image 6 (1).png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Kompyuterlar va 
+              notebooklar</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; height: 200px;border: none;">
+          <img src="images/image 6 (2).png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Televizorlar</h8>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; height: 200px;border: none;">
+          <img src="images/image 6 (3).png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Aqlli soatlar</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; height: 200px;border: none;">
+          <img src="images/image 6 (4).png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Quloqchinlar</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 9rem; height: 200px;border: none;">
+          <img src="images/image 6 (5).png" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Konditsioner</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 8rem; height: 200px;border: none;">
+          <img src="images/image 6 (6).png" class="card-img">
+          <div class="card-body">
+            <h6 class="card-title">Sovutkichlar</h6>
+          </div>
+        </div>
+        <div class="card" style="width: 8rem; height: 200px;border: none;">
+          <img src="images/image 6 (7).png" class="card-img">
+          <div class="card-body">
+            <h6 class="card-title">Kir yuvish mashinalari</h6>
+          </div>
+        </div>
+      </div>
+      <div class="batafsil">
+       <button><h4>Batafsil</h4></button>
+      </div>
+      <br>
+      <div class="text2">
+      <h3>Eng ko'p sotilgan</h3>
+      <br>
+      </div>
+      <div class="noutbuks">
+        <!-- 1-qator -->
+      <div class="row m-3 " style="display:flex; justify-content: space-between;">
+        <div class="card " style="width: 240px;height: 410px;border: none;">
+          <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+            <img src="https://static.sello.uz/unsafe/x900/https://static.sello.uz/fm/20230310/669a97d2-91b7-41b8-a6b9-32d8cb734c0e.WEBP" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">299 000 so'm</h5>
+              <a href="#" class="card-text" style="color: black;text-decoration: none;">Apple Airpods Pro simsiz quloqchin</a>
+              <p style="color: rgba(108, 117, 125, 1);">1230 buyurtma</p>
+              <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+              <button class="savat"><img src="images/Vector (5).svg"></button>
+            </div>
+          </div>
+          <div class="card " style="width: 240px;height: 410px;border: none;">
+            <button class="bbb"><h6>Top sale</h6></button>
+            <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <img src="images/Без_названия-removebg-preview.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">4 234 000 so'm</h5>
+                <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Apple Macbook Pro</a>
+                <br><br>
+                <p style="color: rgba(108, 117, 125, 1);"> 328 buyurtma</p>
+                <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                <button class="savat"><img src="images/Vector (5).svg"></button>
+              </div>
+            </div>
+            <div class="card " style="width: 240px;height: 410px;border: none;">
+              <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <br>
+                <img src="images/png-transparent-robotic-vacuum-cleaner-xiaomi-mi-robot-xiaomi-mijia-roborock-robot-robot-electronics-vacuum-cleaner-mobile-phones-removebg-preview.png" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">1 340 000 so'm</h5>
+                  <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);"> Robot - tozalagich Xiaomi Mi Robot</a>
+                  <p style="color: rgba(108, 117, 125, 1);">310 buyurtma</p>
+                  <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                  <button class="savat"><img src="images/Vector (5).svg"></button>
+                </div>
+              </div>
+              <div class="card " style="width: 240px;height: 410px;border: none;">
+                <button class="bbc"><h6>Yangilik</h6></button>
+                <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                  <img src="images/v36bvXhA1ohp1Ln4w5ZzTA5sd1XZfifKjjFQ6b3q007hWS3TlyWEZYg0PzdZ-removebg-preview.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">1 345 000 so'm</h5>
+                    <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Oynali Fotoaparat Canon EOS 6D Body</a>
+                    <p style="color: rgba(108, 117, 125, 1);">565 buyurtma</p>
+                    <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                    <button class="savat"><img src="images/Vector (5).svg"></button>
+                  </div>
+                </div>    
+    </div>
+    <br>
+     <!-- 2-qator -->
+    <div class="row m-3 " style="display:flex; justify-content: space-between;">
+      <div class="card " style="width: 240px;height: 410px;border: none;">
+        <button class="bbb"><h6>Top sale</h6></button>
+        <br>
+        <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+          <img src="https://cdn.shopify.com/s/files/1/0745/4821/6111/products/Nomsiz-dizayn-2022-06-24T223347.625_1066x.png?v=1682601792" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">3 097 000 so'm</h5>
+            <a href="#" class="card-text" style="color: black;text-decoration: none;">Xiaomi - Note 11 (Black)</a>
+            <p style="color: rgba(108, 117, 125, 1);">430 buyurtma</p>
+            <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+            <button class="savat"><img src="images/Vector (5).svg"></button>
+          </div>
+        </div>
+        <div class="card " style="width: 240px;height: 410px;border: none;">
+          <button class="bbc"><h6>Yangilik</h6></button>
+          <br>
+          <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+            <img src="https://cdn.shopify.com/s/files/1/0745/4821/6111/products/Nomsiz-dizayn-2022-06-25T001451.952.png?v=1682601855" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">19 600 000 so'm</h5>
+              <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Samsung - S 22 Ultra </a>
+              <p style="color: rgba(108, 117, 125, 1);"> 120 buyurtma</p>
+              <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+              <button class="savat"><img src="images/Vector (5).svg"></button>
+            </div>
+          </div>
+          <div class="card " style="width: 240px;height: 410px;border: none;">
+            <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <img src="https://assets.asaxiy.uz/product/items/desktop/44f683a84163b3523afe57c2e008bc8c2022092116292692242NTcHaV6ojr.png.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">16 999 000 so'm</h5>
+                <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">iPhone 14 Pro max 1TB</a>
+                <p style="color: rgba(108, 117, 125, 1);">270 buyurtma</p>
+                <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                <button class="savat"><img src="images/Vector (5).svg"></button>
+              </div>
+            </div>
+            <div class="card " style="width: 240px;height: 410px;border: none;">
+              <br>
+              <button class="bbc"><h6>Yangilik</h6></button>
+              <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                <img src="https://cdn.shopify.com/s/files/1/0745/4821/6111/products/Nomsiz-dizayn-2022-06-24T234248.749.png?v=1682601834" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">19 786 000 so'm</h5>
+                  <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Samsung - Z Fold 3</a>
+                  <p style="color: rgba(108, 117, 125, 1);">200 buyurtma</p>
+                  <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                  <button class="savat"><img src="images/Vector (5).svg"></button>
+                </div>
+              </div>    
+       </div>
+    </div>
+    <br>
+    <div class="batafsil">
+      <button><h4>Ko'proq ko'rish</h4></button>
+     </div>
+     <br>
+      <div class="mechti" style="text-align: center;">
+        <img src="images/image 1.png" style="display: inline-block;">
+      </div>
+      <br>
+      <div class="text2">
+        <h3>Eng ommabop</h3>
+        <br>
+        </div>
+        <div class="noutbuks">
+          <!-- 1-qator -->
+        <div class="row m-3 " style="display:flex; justify-content: space-between;">
+          <div class="card " style="width: 240px;height: 410px;border: none;">
+            <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <img src="https://media.extra.com/i/aurora/100329926_100_03?w=400&h=400&img404=missing_product&v=false" class="card-img-top">
+              <br>
+              <div class="card-body">
+                <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">4 089 000 so'm</h5>
+                <a href="#" class="card-text" style="color: black;text-decoration: none;"> Honor X9a 6/128 GB</a>
+                <p style="color: rgba(108, 117, 125, 1);">211 buyurtma</p>
+                <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                <button class="savat"><img src="images/Vector (5).svg"></button>
+              </div>
+            </div>
+            <div class="card " style="width: 240px;height: 410px;border: none;">
+              <button class="bbz"><h6>Skidka</h6></button>
+              <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                <img src="https://tovar.uz/images/company/265/tovar/10103/o_1_5f8947558166e.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="h66">69 000 so'm</h6>
+                  <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">40 800 so'm</h5>
+                  <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Мышь E2</a>
+                  <p style="color: rgba(108, 117, 125, 1);"> 507 buyurtma</p>
+                  <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                  <button class="savat"><img src="images/Vector (5).svg"></button>
+                </div>
+              </div>
+              <div class="card " style="width: 240px;height: 410px;border: none;">
+                <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                  <img src="https://prizma.uz/uploads/product/images/060403-00043/ZIFFLER_Monaco_12_Inverter_White_1.png" class="card-img-top">
+                  <div class="card-body">
+                    <button class="bbz"><h6>Skidka</h6></button>
+                    <h6 class="h66">5 509 000 so'm</h6>
+                    <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">4 759 000 so'm</h5>
+                    <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Ziffler Verdena Inverter</a>
+                    <p style="color: rgba(108, 117, 125, 1);">610 buyurtma</p>
+                    <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                    <button class="savat"><img src="images/Vector (5).svg"></button>
+                  </div>
+                </div>
+                <div class="card " style="width: 240px;height: 410px;border: none;">
+                  <button class="bbc"><h6>Yangilik</h6></button>
+                  <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                  <br>
+                    <img src="https://storage2.alifshop.uz/files?k1=b27ea71c-0efc-462e-acfb-deb32fc01d96&k2=cac7ec79f732e0bf88806b20fd2e57914f4c21706371a8d88dc32c955f2d841f3c3dc39d6c4db548ce871095987b07dc9f589d1bb751806a0a4cca6d94740216" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">1 900 000 so'm</h5>
+                      <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Принтер Epson L1110</a>
+                      <p style="color: rgba(108, 117, 125, 1);">525 buyurtma</p>
+                      <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                      <button class="savat"><img src="images/Vector (5).svg"></button>
+                    </div>
+                  </div>    
+      </div>
+      <br>
+       <!-- 2-qator -->
+      <div class="row m-3 " style="display:flex; justify-content: space-between;">
+        <div class="card " style="width: 240px;height: 410px;border: none;">
+          <br>
+          <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+            <img src="https://systema.kg/391334-large_default/stiralnaya-mashina-lg-tw4v3rs6s105kg.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">7 709 000 so'm</h5>
+              <a href="#" class="card-text" style="color: black;text-decoration: none;">Kir yuvish mashinasi LG</a>
+              <p style="color: rgba(108, 117, 125, 1);">207 buyurtma</p>
+              <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+              <button class="savat"><img src="images/Vector (5).svg"></button>
+            </div>
+          </div>
+          <div class="card " style="width: 240px;height: 410px;border: none;">
+            <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <img src="https://spphone.uz/wp-content/uploads/2023/02/b0caa5749b23f968b8bd361687390c8420230201151105333597kzRWJjbDm.png.webp" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">279 000 so'm</h5>
+                <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Borofone BD3 Ultra </a>
+                <p style="color: rgba(108, 117, 125, 1);"> 700 buyurtma</p>
+                <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                <button class="savat"><img src="images/Vector (5).svg"></button>
+              </div>
+            </div>
+            <div class="card " style="width: 240px;height: 410px;border: none;">
+              <button class="bbz"><h6>Skidka</h6></button>
+              <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+              <br><br>
+                <img src="https://assets.asaxiy.uz/product/items/desktop/4da451d2ff0bb7dd0d5f5d34cc6edf252020121210364162218mQTPVUcnSn.jpg.webp" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="h66">189 000 so'm</h6>
+                  <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">119 000 so'm</h5>
+                  <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);"> Netac U785 64Gb</a>
+                  <p style="color: rgba(108, 117, 125, 1);">270 buyurtma</p>
+                  <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                  <button class="savat"><img src="images/Vector (5).svg"></button>
+                </div>
+              </div>
+              <div class="card " style="width: 240px;height: 410px;border: none;">
+                <br>
+                <button class="bbc"><h6>Yangilik</h6></button>
+                <img src="images/Vector (4).svg" style="position: absolute;width: 420px;height: 25px;top: 20px;">
+                  <img src="https://img.mvideo.ru/Pdb/20068205b.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: rgba(13, 99, 243, 1);">8 719 000 so'm</h5>
+                    <a href="#" class="card-text" style="color: rgba(30, 30, 30, 1);">Muzlatgich LG</a>
+                    <p style="color: rgba(108, 117, 125, 1);">232 buyurtma</p>
+                    <a href="#" class="btn btn-primary" style="background-color: rgba(13, 99, 243, 1);width: 100px;">Sotib olish</a>
+                    <button class="savat"><img src="images/Vector (5).svg"></button>
+                  </div>
+                </div>    
+         </div>
+      </div>
+      <br>
+      <div class="batafsil">
+        <button><h4>Ko'proq ko'rish</h4></button>
+       </div>
+       <br>
+       <div class="text2">
+        <h3>Brendlarimiz</h3>
+        <br>
+        </div>
+       <!-- brendlar boyichaa -->
+       <div class="brends">
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="padding: 40px;">
+            <img src="https://assets.asaxiy.uz/brand//5e15c4ec85cf2.jpg" class="card-img-top">
+          </div>
+        </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://assets.asaxiy.uz/brand//5e15c5de44b63.jpg" class="card-img-top">
+          </div>
+        </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="padding: 40px;">
+            <img src="https://assets.asaxiy.uz/brand//5e15c63e06b95.png" class="card-img-top">
+          </div>
+        </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="padding: 40px;">
+            <img src="https://assets.asaxiy.uz/brand//5e15c561deadb.png" class="card-img-top">
+          </div>
+        </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="padding: 40px;">
+            <img src="https://assets.asaxiy.uz/brand//5e15c615d99f8.png" class="card-img-top">
+          </div>
+        </div>
+       </div>
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card" style="padding: 40px;">
+            <img src="https://assets.asaxiy.uz/brand//5e15c51449bd0.jpg" class="card-img-top">
+          </div>
+        </div>
+       </div>
+      </div>
+      <!-- brends 2-qator -->
+      <br>
+      <div class="brends">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="justify-content: center;padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand//63b65df2b0896.png" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="justify-content: center;padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand/webp//6014ffc121fc1.webp" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand/webp//5ff6f8872a0db.webp" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="justify-content: center;padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand/webp//605036814c07e.webp" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="justify-content: center;padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand/webp//6064cdf0ce901.webp" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+           <div class="card" style="justify-content: center;padding: 40px;">
+             <img src="https://assets.asaxiy.uz/brand/webp//6014fbfea491a.webp" class="card-img-top">
+           </div>
+         </div>
+        </div>
+        
+       </div>
+          <br>
+          <br>
+          <div class="main">
+            <footer id="Footer"style="background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 20%, rgba(246, 77, 77, 0.2) 100%); padding: 35px;" class="page-footer font-small stylish-color-dark pt-4">
+                <div class="row">
+                    <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Hujjatlar</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 85px;">
+                        <p>
+                          <a href="#!" class="hover-link" style="text-decoration: none;">Nizom</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="hover-link" style="text-decoration: none;">Umumiy shartlar</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="hover-link" style="text-decoration: none;">Ofertalar arxivi</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="hover-link" style="text-decoration: none;">Guvohnoma</a>
+                        </p>
+                      </div>
+                      
+                  <hr class="clearfix w-100 d-md-none">
+                  <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Servis</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Do'konlar</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Biz haqimizda</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Qaytarish</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Promokodlar</a>
+                    </p>
+                  </div>
+                  <hr class="clearfix w-100 d-md-none">
+                  <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Mahsulotlar Katalogi</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 200px;">
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Katalog 1</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Katalog 2</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Katalog 3</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="hover-link" style="text-decoration: none;">Katalog 4</a>
+                    </p>
+                  </div>
+                  <hr class="clearfix w-100 d-md-none">
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Axbarot xizmati</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 150px;">
+                    <p>
+                      <i class="bi bi-envelope-fill"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                      </svg>  contact@nextstore.uz</p>
+                    <p>
+                      <i class="bi bi-telephone-fill"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>  +998 97 712 96 96 </p>
+                    <p>
+                      <i class="bi bi-telephone-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg> +998 95 503 09 09</p>
+                    <p>
+                      <i class="bi bi-house-door-fill"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                      </svg>  Sag'bon 186, Olmazor tumani, Toshkent O'zbekiston</p>
+                  </div>
+                  <hr>
+                  <div class="icoo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgba(24, 119, 242, 1)" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgba(42, 171, 238, 1),rgba(34, 158, 217, 1)" class="bi bi-telegram" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgba(30, 30, 30, 1)" class="bi bi-tiktok" viewBox="0 0 16 16">
+                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                    </svg>
+                  </div>
+                  <h6>2023 Nextstore.com</h6>
+                </div>
+            </footer>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html> 

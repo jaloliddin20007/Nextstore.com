@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Nextstore</title>
+</head>
+<body style="background-color: #5af4ff4b;"> 
+    <div class="navv">
+        <div class="aloqa">
+          <img src="images/Vector (1).svg">
+          <a href="#" class="link-dark no-underline">Aloqa uchun</a>
+          <select id="language-selector">
+            <option value="en">UZ</option>
+            <option value="fr">ENG</option>
+            <option value="es">RUS</option>
+            <!-- Add more language options as needed -->
+          </select>
+        </div>
+        <!-- navbar qism -->
+          <nav class="navbar bg-body-white">
+              <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="images/Logo.png">
+                </a>
+                <div class="katalog">
+                  <button><img src="images/Vector.png">KATALOG</button>
+                </div>
+                <div class="search">
+                  <input type="text" placeholder="Mahsulotlarni qidirish">
+                  
+                  <button><img src="images/Vector.svg"></button>
+                </div>
+                <div class="icons">
+                <button><img src="images/Vector (2).svg"></button>
+                <button><img src="images/Vector (3).svg"></button>
+                </div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/image 6 (8).png" alt="Dropdown Image" style="border-radius: 25px;">
+                    </a>
+                  
+                    <div class="dropdown-menu" >
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                      </svg> Ma'lumotlarim</a>
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                      </svg> Buyurtmalarim</a>
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg> Sevimlilar</a>
+                      <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg> Manzillar</a>
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+            </nav>
+            <br>
+        </div>
+        <div class="card-container">
+            <div class="card menu-card" style="border: none;">
+              <a href="#"><h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+              </svg> Aksiya</h6></a>
+              <a href="nout.html"><h6>Kompyuter va notebooklar</h6></a>
+              <a href="#"><h6 style="background-color: white; width: 100%;height: 30px;border-radius: 4px;">Telefonlar</h6></a>
+              <a href="#"><h6>Maishiy texnika</h6></a>
+              <a href="#"><h6>Erkaklar uchun kiyimlar</h6></a>
+              <a href="#"><h6>Ayollar uchun kiyimlar</h6></a>
+              <a href="#"><h6>Bolalar uchun</h6></a>
+              <a href="#"><h6>Avtomobil mahsulotlari</h6></a>
+              <a href="#"><h6>Go'zallik va so'glik</h6></a>
+              <a href="#"><h6>Sport va o'yin-kulgi</h6></a>
+              <a href="#"><h6>Uy hayvonlari uchun tovarlar</h6></a>
+              <a href="#"><h6>Xobbi va ijodkorlik</h6></a>
+              <a href="#"><h6>Kantselyariya buyumlari</h6></a>
+              <a href="#"><h6>Maishiy kimyo</h6></a>
+              <a href="#"><h6>Sport va o'yin kulgi</h6></a>
+              <a href="#"><h6>Uy hayvonlari uchun tovarlar</h6></a>
+              <a href="#"><h6>Aksesuarslar</h6></a>
+            </div>
+            <div class="card value-card" style="border: none;">
+                <br>
+                <div class="brendlar">
+                    <div class="bba">
+                 <h5>Brendlar</h5>
+                 <a href="#">Samsung</a><br>
+                 <a href="#">Vivo</a><br>
+                 <a href="#">Tecno</a><br>
+                 <a href="#" >Realme & Xiaomi</a><br> 
+                 <a href="#" >Apple</a><br>
+                 <a href="#" >Artel</a><br>
+                 <a href="#" >Nokia</a><br>
+                 <a href="#" >Infinix </a><br>
+                 <a href="#" >OnePlus </a><br>
+                 <a href="#" >ZTE </a><br>
+                 <a href="#" >Blackview</a><br>
+                 <a href="#" >Oppo</a><br>
+                 <a href="#" >Ergo </a><br>
+                 <a href="#" >BQ </a><br>
+                 <a href="#" >Huawei </a><br>
+                 <a href="#">Alcatel </a><br>
+                 <a href="#">TCL</a><br>
+                 <a href="#">Inoi</a><br>
+
+                    </div>
+                    <div class="samsung">
+                        <div class="seria">
+                     <h5>Samsung brendi</h5>
+                     <a href="#"><p>S serialari <br> A serialari
+                    <br>Note serialari <br>Pro serialari </p></a>
+                    <div class="huawei">
+                        <div class="samsung">
+                            <div class="seria">
+                         <h5>Huawei brendi</h5>
+                         <a href="#"><p>S serialari <br> Mini serialari
+                        <br>Note serialari <br>Tab serialari </p></a>
+                            </div>
+                             </div>
+                     </div>
+                     <div class="huawei">
+                        <div class="samsung">
+                            <div class="seria">
+                         <h5>Ommabop turdagi</h5>
+                         <a href="#"><p>S serialari <br> Mini serialari
+                        <br>Pro max serialari <br>Pro serialari </p></a>
+                            </div>
+                             </div>
+                     </div>
+                        </div>
+                         </div>
+                         <div class="samsung">
+                            <div class="seria">
+                         <h5>Redmi & Xiaomi brendi</h5>
+                         <a href="#"><p>S serialari <br> A serialari
+                        <br>Note serialari <br>Pro serialari </p></a>
+                        <div class="huawei">
+                            <div class="samsung">
+                                <div class="seria">
+                             <h5>POCO brendi</h5>
+                             <a href="#"><p>S serialari <br> Note serialari
+                            <br>Tab serialari <br> A serialari </p></a>
+                                </div>
+                                 </div>
+                         </div>
+                         <div class="huawei">
+                            <div class="samsung">
+                                <div class="seria">
+                             <h5>Arzon turdagi</h5>
+                             <a href="#"><p>Y serialari <br> S serialari
+                            <br>Note serialari <br>Pro serialari </p></a>
+                                </div>
+                                 </div>
+                         </div>
+                            </div>
+                             </div>
+                             <div class="samsung">
+                                <div class="seria">
+                             <h5>iPhone brendi</h5>
+                             <a href="#"><p>S serialari <br> Mini serialari
+                            <br>Pro max serialari <br>Pro serialari </p></a>
+                            <div class="huawei">
+                                <div class="samsung">
+                                    <div class="seria">
+                                 <h5>NOKIA brendi</h5>
+                                 <a href="#"><p>Y serialari <br> Novey serialari
+                                <br>S serialari <br>B U serialari </p></a>
+                                    </div>
+                                     </div>
+                             </div>
+                             <div class="huawei">
+                                <div class="samsung">
+                                    <div class="seria">
+                                 <h5>Infinix brendi</h5>
+                                 <a href="#"><p>S serialari <br> Mini serialari
+                                <br>A serialari <br>Pro serialari </p></a>
+                                    </div>
+                                     </div>
+                             </div>
+                             
+                                </div>
+                                 </div>     
+                </div>
+                
+            </div>
+        </div>
+          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>   
+</body>
+</html>
